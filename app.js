@@ -15,12 +15,19 @@ var _options = {
     /*
     en: {
         name: 'English',
-        webapp: 'https://l10n.org.al',
+        webapp: null,
         vocabularies: {
-            ICT_sq: 'Fjalori ICT',
+            ICT_sq: 'ICT Vocabulary',
         },
     },
     */
+    mk: {
+        name: 'македонски',
+        webapp: null,
+        vocabularies: {
+            ICT_mk: 'лексикон',
+        },
+    },
 };
 
     

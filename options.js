@@ -18,4 +18,11 @@ var _options = {
         },
     },
     */
+    mk: {
+        name: 'македонски',
+        webapp: null,
+        vocabularies: {
+            ICT_mk: 'лексикон',
+        },
+    },
 };

@@ -5,7 +5,7 @@ var $config = {
 
     lng: 'sq',
     vocabulary: 'ICT_sq',
-    webapp_url: null,
+    webapp_url: 'https://l10n.org.al',
 
     // Settings for oauth2 authentication.
     oauth2: {
@@ -24,7 +24,7 @@ var $config = {
     },
 
     // Use an iframe to narrow the window, when the screen is too wide.
-    use_iframe: true,
+    use_iframe: false,
 
     // Links that are displayed on the menu.
     external_links: [

@@ -1,6 +1,6 @@
 
 var $config = {
-    app_url: 'http://fjalori.fs.al',
+    app_url: 'http://v.btranslator.org',
     api_url: 'https://btranslator.org',
 
     lng: 'sq',
@@ -20,7 +20,7 @@ var $config = {
 
     // Disqus.
     disqus: {
-        shortname: 'l10n-sq',
+        shortname: null,
     },
 
     // Use an iframe to narrow the window, when the screen is too wide.
@@ -30,9 +30,6 @@ var $config = {
     external_links: [
         { title: 'G-Translate',
           href: 'https://translate.google.com/',
-        },
-        { title: 'Fjalori i Shqipes',
-          href: 'http://www.fjalori.shkenca.org/',
         },
     ]
 };

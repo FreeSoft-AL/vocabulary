@@ -12,15 +12,55 @@ var _options = {
             huazime_sq: 'Fjalë të Huaja',
         },
     },
-    /*
-    en: {
-        name: 'English',
+    fr: {
+        name: 'Français',
         webapp: null,
         vocabularies: {
-            ICT_sq: 'ICT Vocabulary',
+            ICT_fr: 'Vocabulaire',
         },
     },
-    */
+    de: {
+        name: 'Deutsch',
+        webapp: null,
+        vocabularies: {
+            ICT_de: 'Wortschatz',
+        },
+    },
+    it: {
+        name: 'Italiano',
+        webapp: null,
+        vocabularies: {
+            ICT_it: 'Vocabolario',
+        },
+    },
+    es: {
+        name: 'Español',
+        webapp: null,
+        vocabularies: {
+            ICT_es: 'Vocabulario',
+        },
+    },
+    bg: {
+        name: 'български',
+        webapp: null,
+        vocabularies: {
+            ICT_bg: 'лексика',
+        },
+    },
+    fi: {
+        name: 'Suomi',
+        webapp: null,
+        vocabularies: {
+            ICT_fi: 'Sanasto',
+        },
+    },
+    tr: {
+        name: 'Türkçe',
+        webapp: null,
+        vocabularies: {
+            ICT_tr: 'Sözlük',
+        },
+    },
     mk: {
         name: 'македонски',
         webapp: null,

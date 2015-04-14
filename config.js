@@ -29,7 +29,7 @@ var $config = {
 
     // When the user changes the language of translations,
     // the language of the application interface is changed as well.
-    update_app_language: false,
+    update_app_language: true,
 
     // Links that are displayed on the menu.
     external_links: [

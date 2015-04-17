@@ -1,0 +1,1 @@
+_.setTranslation({"Username": "Benuztername", "Profile": "Profil", "Vocabulary": "Wortschatz", "Links": "Veweise", "Settings": "Einstellungen", "Sign out": "Ausloggen", "Download": "Herunterladen", "Contact": "Kontakt", "Done": "Fertig", "Sign up": "Registrieren", "Sign in": "Einloggen", "Cancel": "Abbrechen", "Password": "Passwort", "Delete": "L\u00f6schen"});

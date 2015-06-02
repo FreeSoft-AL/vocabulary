@@ -19,11 +19,6 @@ var $config = {
         scope: 'user_profile',
     },
 
-    // Disqus.
-    disqus: {
-        shortname: null,
-    },
-
     // Use an iframe to narrow the window, when the screen is too wide.
     use_iframe: false,
 

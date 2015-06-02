@@ -11,6 +11,7 @@ var _options = {
             ICT_sq: 'Fjalori ICT',
             huazime_sq: 'Fjalë të Huaja',
         },
+        disqus: 'l10n-sq',   // disqus shortname
         keyboard: {
             layout: 'custom',
             customLayout: {
@@ -408,8 +409,8 @@ $(document).on('pagecreate', '#vocabulary', function() {
     term ? _term.display(term) : _term.get_random(true);
 
     // Initialize Disqus.
-    $config.disqus.shortname ?
-        _disqus.init($config.disqus.shortname) :
+    _options[$config.lng].disqus ?
+        _disqus.init(_options[$config.lng].disqus) :
         $('#disqus').hide();
 });
 
@@ -772,7 +773,7 @@ var _translations = {
             $('#social-share-buttons').show();
 
             // Get the disqus comments for this term.
-            if ($config.disqus.shortname) {
+            if (_options[$config.lng].disqus) {
                _disqus.reload(sguid, term);
                $('#disqus').show();
            }

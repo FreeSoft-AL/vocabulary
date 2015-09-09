@@ -184,6 +184,7 @@ var _settings = {
     },
 
     set_title: function () {
+        if (!_options[$config.lng]) return;
         var title = _options[$config.lng].vocabularies[$config.vocabulary];
         document.title = title;
         $('h1').html(title);
@@ -204,13 +205,15 @@ var _settings = {
 
         // Fill the list of vocabularies.
         var data = { vocabularies: [] };
-        $.each(_options[$config.lng].vocabularies, function (id, name) {
-            data.vocabularies.push({
-                id: id,
-                name: name,
-                selected: (id==$config.vocabulary ? 'checked="checked"' : ''),
+        if (_options[$config.lng]) {
+            $.each(_options[$config.lng].vocabularies, function (id, name) {
+                data.vocabularies.push({
+                    id: id,
+                    name: name,
+                    selected: (id==$config.vocabulary ? 'checked="checked"' : ''),
+                });
             });
-        });
+        }
         var tmpl = $('#tmpl-vocabularies').html();
         $('#vocabularies').html(Mustache.render(tmpl, data)).trigger('create');
 
@@ -284,7 +287,9 @@ var _translate_in_context = {
      */
     get_url: function (el) {
         var url = 'https://btranslator.org/translations/';
-        if (_options[$config.lng].translate_in_context_url) {
+        if ( _options[$config.lng]
+             && _options[$config.lng].translate_in_context_url )
+        {
             url = _options[$config.lng].translate_in_context_url;
         }
         var sguid = $(el).attr('sguid');
@@ -505,7 +510,7 @@ $(document).on('pagecreate', '#vocabulary', function() {
     term ? _term.display(term) : _term.get_random(true);
 
     // Initialize Disqus.
-    _options[$config.lng].disqus ?
+    (_options[$config.lng] && _options[$config.lng].disqus) ?
         _disqus.init(_options[$config.lng].disqus) :
         $('#disqus').hide();
 });
@@ -875,7 +880,7 @@ var _translations = {
             $('#social-share-buttons').show();
 
             // Get the disqus comments for this term.
-            if (_options[$config.lng].disqus) {
+            if (_options[$config.lng] && _options[$config.lng].disqus) {
                _disqus.reload(sguid, term);
                $('#disqus').show();
            }
@@ -885,7 +890,8 @@ var _translations = {
     /** Attach a custom keyboard to the field of new translations. */
     attach_keyboard: function() {
         if (!$config.custom_keyboard)  return;
-        if (! _options[$config.lng].keyboard)  return;
+        if (!_options[$config.lng])  return;
+        if (!_options[$config.lng].keyboard)  return;
         var kbd = _options[$config.lng].keyboard;
 
         var options = {

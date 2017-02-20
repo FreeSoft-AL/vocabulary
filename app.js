@@ -90,7 +90,7 @@ var _options = {
         vocabularies: {
             ICT_fr: 'Vocabulaire',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     de: {
         name: 'Deutsch',
@@ -98,7 +98,7 @@ var _options = {
         vocabularies: {
             ICT_de: 'Wortschatz',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     it: {
         name: 'Italiano',
@@ -106,7 +106,7 @@ var _options = {
         vocabularies: {
             ICT_it: 'Vocabolario',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     es: {
         name: 'Español',
@@ -114,7 +114,7 @@ var _options = {
         vocabularies: {
             ICT_es: 'Vocabulario',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     bg: {
         name: 'български',
@@ -122,7 +122,7 @@ var _options = {
         vocabularies: {
             ICT_bg: 'лексика',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     fi: {
         name: 'Suomi',
@@ -130,7 +130,7 @@ var _options = {
         vocabularies: {
             ICT_fi: 'Sanasto',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     tr: {
         name: 'Türkçe',
@@ -138,7 +138,7 @@ var _options = {
         vocabularies: {
             ICT_tr: 'Sözlük',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
     mk: {
         name: 'македонски',
@@ -146,7 +146,7 @@ var _options = {
         vocabularies: {
             ICT_mk: 'лексикон',
         },
-        translate_in_context_url: 'https://btranslator.org/btr/project/dashohoxha/v.btranslator.org/',
+        translate_in_context_url: 'https://btranslator.net/btr/project/DashamirHoxha/vocabulary/',
     },
 };
 
